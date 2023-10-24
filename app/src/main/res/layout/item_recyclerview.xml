@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.martial.salaryup.DashLineView
+        android:id="@+id/dlv_header"
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        app:dlv_dashGap="2dp"
+        app:dlv_dashSize="3dp"
+        android:layout_marginLeft="40dp"
+        app:dlv_dashColor="@color/grey"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.martial.salaryup.DashLineView
+        android:id="@+id/dlv_headerTwo"
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        app:dlv_dashGap="2dp"
+        app:dlv_dashSize="3dp"
+        android:layout_marginLeft="40dp"
+        app:dlv_dashColor="@color/grey"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/dlv_header"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.martial.salaryup.DashLineView
+        android:id="@+id/dlv_headerThree"
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        app:dlv_dashGap="2dp"
+        app:dlv_dashSize="3dp"
+        android:layout_marginLeft="40dp"
+        app:dlv_dashColor="@color/grey"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/dlv_headerTwo"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15sp"
+        android:src="@drawable/ic_sms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dlv_headerThree"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.martial.salaryup.DashLineView
+        android:id="@+id/dlv_footer"
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        app:dlv_dashGap="2dp"
+        app:dlv_dashSize="3dp"
+        android:layout_marginLeft="40dp"
+        app:dlv_dashColor="@color/grey"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ivIcon"
+        app:layout_constraintBottom_toTopOf="@id/dlv_footerTwo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.martial.salaryup.DashLineView
+        android:id="@+id/dlv_footerTwo"
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        app:dlv_dashGap="2dp"
+        app:dlv_dashSize="3dp"
+        android:layout_marginLeft="40dp"
+        app:dlv_dashColor="@color/grey"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/dlv_footer"
+        app:layout_constraintBottom_toTopOf="@id/dlv_footerTwo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.martial.salaryup.DashLineView
+        android:id="@+id/dlv_footerThree"
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        app:dlv_dashGap="2dp"
+        app:dlv_dashSize="3dp"
+        android:layout_marginLeft="40dp"
+        app:dlv_dashColor="@color/grey"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/dlv_footerTwo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv1Permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="SMS Read"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tvSub1"
+        app:layout_constraintStart_toEndOf="@id/ivIcon"
+        app:layout_constraintTop_toTopOf="@id/ivIcon" />
+
+    <TextView
+        android:id="@+id/tvSub1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20sp"
+        android:gravity="left"
+        android:paddingEnd="10sp"
+        android:text="We need this access for seamless video \nKYC process"
+        app:layout_constraintBottom_toBottomOf="@id/ivIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivIcon"
+        app:layout_constraintTop_toBottomOf="@id/tv1Permission" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

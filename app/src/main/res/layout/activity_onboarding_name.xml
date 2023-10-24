@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnboardingName">
+
+    <ImageView
+        android:id="@+id/closeIconName"
+        android:src="@drawable/ic_back"
+        android:background="@drawable/round_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/upperCurve"
+        android:src="@drawable/ic_bg_upper_curve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/oneBanc"
+        android:src="@drawable/ic_onebanc_logo"
+        android:layout_marginEnd="5dp"
+        android:paddingTop="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/graphicName"
+        android:src="@drawable/ic_name_graphic"
+        android:layout_height="0dp"
+        android:paddingTop="20sp"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:text="@string/what_s_your_name"
+        android:background="@drawable/fadding_view"
+        android:textSize="16dp"
+        android:paddingStart="40dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvSubName" />
+
+    <TextView
+        android:id="@+id/tvSubName"
+        android:hint="@string/let_s_get_to_know_each_other"
+        android:background="@drawable/fadding_view"
+        android:textSize="14dp"
+        android:paddingStart="40sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20sp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etName"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:hint="@string/type_your_name_here"
+        android:background="@drawable/rounded_corner"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:paddingStart="40sp"
+        android:paddingEnd="40dp"
+        android:maxLines="1"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btNameNext" />
+
+    <Button
+        android:id="@+id/btNameNext"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
